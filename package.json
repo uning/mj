@@ -4,11 +4,12 @@
   "description": "a mahong server and a intellgent client",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "uning",
   "license": "MIT",
   "dependencies": {
+    "log4js": "^1.1.1",
     "should": "^11.2.0"
   },
   "devDependencies": {

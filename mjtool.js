@@ -21,6 +21,9 @@ exports.shuffle = function(mjTotalNum){
     return mjHeap;
 }
 
+
+
+
 //返回叫牌数组
 exports.checkJiao = function (handMjs,mt){
     var ret = [];

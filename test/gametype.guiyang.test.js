@@ -10,6 +10,7 @@ describe('test/gametype.guiyang.test.js', function () {
     it('同一麻将牌有4颗', function () {
             gy.mjOneNum.should.equal(4);
     });
-
-
 });
+
+
+

@@ -1,9 +1,9 @@
 
 //贵阳麻将玩法配置
 exports = module.exports = gt = {
-    //mjType: ['wan','tong','tiao'] //有几种麻将,万同条智能放前面
-    //,mjTypeNum: [9,9,9]  //每一种麻将有几颗
-    //,mjOneNum: 4         //同一颗麻将有多少张
+    mjType: ['wan','tong','tiao']
+    ,mjTypeNum: [9,9,9]  //每一种麻将有几颗
+    ,mjOneNum: 4         //同一颗麻将有多少张
     ,mjHandNum: 13       //一手麻将多少张
     ,mjTotalNum:108      //总的牌数目
     ,handTypeFan:{//牌型对应的番数
@@ -18,6 +18,11 @@ exports = module.exports = gt = {
     }
 }
 
+//整理麻将
+exports.addhand = function(pl,mj){
+    let idx =  parseInt(mj/9);
+    pl.hand[idx].push(mj);
+}
 
 //检查手牌叫牌类型,叫什么牌
 const hc = {};
